@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+*{
+  margin: 0; 
+  padding: 0; 
+  box-sizing: 
+  border-box; font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #242222;
+}
+
+.extra-div h2{
+    font-size: 0.9rem;
+    margin: 20px 0px 15px 0px;
+    font-weight: bold;
+    line-height: 0.7;
+    word-spacing: 2px;
+} 
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 137, 163, 0.3),rgba(0, 137, 163, 0.3)), url('img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%,100% 75%,50% 100%, 0% 75%,0 0);
+    position: relative;
+}
+
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.nav-item a{
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    font-weight: 500;
+}
+
+
+/*Contact Section*/
+.contact_section{
+  padding: 120px 0px;
+  background: #fafbfc;
+}
+.contact_section .heading{
+  font-size: 50px;
+  font-weight: 600;
+}
+.contact_section hr{
+  border: #FDA8CF;
+  width: 6rem;
+  margin: 12px 0px;
+}
+.contact_section .txt{
+font-size: 15px;
+color: #242222;
+}
+.contact_section form .form-control{
+  background: #d2eff7;
+  border: 2px solid #aee9f8;
+  border-radius: 0px;
+  color: rgb(20, 20, 20);
+}
+.contact_section form button{
+  background: #5e79f3;
+  border: 2px solid #391788;
+  color: white;
+  width: 100px;
+  font-size: 15px;
+}
+.contact_section form button:hover{
+  animation: swing;
+  animation-duration: 00.5s;
+}
+.contact_section ul li{
+  color: white;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.contact_section ul li .fa{
+  color: var(--pink-color);
+}
+@media(max-width:991px) and (min-width:768px){
+  .contact_section .heading{
+      font-size: 42px;
+  }
+}
+
+/*signup*/
+
+.signup{
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+    justify-content: center;
+    padding-bottom: 30px;
+    background: rgb(230, 243, 250);
+}
+.signup .container{
+  
+   display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* code for left sectin of form */
+.signup .formDiv{
+  padding-top: 10%;
+  width: 1000px;
+  padding-bottom: 8%;
+  background-color: rgb(230, 243, 250);
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+}
+.signup .formDiv h2 {
+  color: green;
+  margin-top: -5px;
+}
+
+
+/* ---- code for Font Awsome social icons */
+.signup .socialBtn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.signup .icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color:lavender;
+  margin: 5px;
+  line-height: 30px;
+  box-shadow: 0px 0px 10px black;
+   
+}
+.signup .text{
+  font-size: small;
+}
+.signup .orDiv {
+  width: 10%;
+  margin: 0 auto;
+  background-color: lavender;
+  position: relative;
+  top: -16px;
+  justify-content: center;
+}
+
+/* code for form input fields */
+.signup .formGroup{
+  width: 100%;
+  position: relative;
+}
+.signup .formGroup input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-style: none;
+  padding-left: 30px !important;
+}
+
+
+/* Code for Icones inside html form input */
+.signup .formGroup i {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: grey;
+  font-size: smaller;
+  margin: 10px !important;
+}
+
+
+.signup input::placeholder {
+  position: relative;
+  left: 10px;
+}
+.signup input:focus{
+  border-color: red;
+}
+.signup .checkBox{
+  width: 100%;
+  margin-top: 2px;
+}
+
+.signup .btn{
+  width: 70%;
+  padding: 15px;
+  background-color: green;
+  margin-top: 15px;
+  color: lavender;
+  border-radius: 20px;
+  border-style: none;
+}
+.signup .btn2{
+  width: 70%;
+  padding: 15px;
+  background-color:transparent;
+  margin-top: 15px;
+  color: lavender;
+  border-radius: 20px;
+  border-style: none;
+  border: 2px solid rgb(247, 243, 243);
+}
+
+/* CSS mouse hover efects */
+.signup .btn:hover, .btn2:hover, .icon:hover{
+  background-color: rgb(7, 80, 35);
+  color: whitesmoke;
+}
+@media screen and (max-width: 1000px){
+  .signup .formWraper{
+      width: 100%;
+  }
+}
+@media screen and (max-width: 670px){
+  .signup .formDiv{
+      width: 100%;
+      justify-content: center;
+      border-radius: 10px 10px 10px 10px;
+  }
+}
